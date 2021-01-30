@@ -13,7 +13,7 @@ cipher:
   L: L
   M: M
   N: N
-  O: O
+  O: e  # Highest occurring letter, often co-occurring next to itself. Does not exist as single-letter word, as "e" is not an English word.
   P: P
   Q: Q
   R: R
@@ -22,6 +22,6 @@ cipher:
   U: U
   V: V
   W: W
-  X: X
-  Y: Y
+  X: a  # High occurrence, but exists in the text as a single-letter word. Low co-occurrence with itself, fewer than "O=e"
+  Y: i  # The only other single-letter word in English
   Z: Z
