@@ -7,7 +7,7 @@ fn main() {
     let mut letter = fs::read_to_string(letter_path).expect(
         &*("source file for encrypted letter not found at ".to_owned() + &letter_path)
     );
-    println!("Encrypted letter contents: {}", &letter);
+    println!("Encrypted letter contents:\n{}", &letter);
 
     let cipher = load_cipher();
 
@@ -22,7 +22,8 @@ fn main() {
         letter = letter.replace(&from_token, &to_token);
     }
 
-    println!("decoded letter: {}", letter);
+    println!("\nDecoded letter:");
+    println!("{}", letter);
 }
 
 fn load_cipher() -> Hash {
