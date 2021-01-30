@@ -12,14 +12,27 @@ fn main() {
     let cipher = load_cipher();
 
     println!("{}", "Cipher:");
-    for (key, val) in cipher.clone() {
-        println!("{}: {}", key.into_string().unwrap(), val.into_string().unwrap());
+    for (encoded, decoded) in cipher.clone() {
+        let encoded_token = encoded
+            .into_string().unwrap();
+
+        let occurences = letter
+            .matches(&encoded_token)
+            .collect::<Vec<_>>()
+            .len();
+
+        println!("{}: {}", encoded_token, &decoded.into_string().unwrap());
+        println!("Occurrences: {}", &occurences)
     }
 
-    for (key, val) in cipher {
-        let from_token = key.into_string().unwrap();
-        let to_token = val.into_string().unwrap();
-        letter = letter.replace(&from_token, &to_token);
+    decode_letter(&mut letter, cipher);
+}
+
+fn decode_letter(letter: &mut String, cipher: Hash) {
+    for (encoded, decoded) in cipher {
+        let from_token = encoded.into_string().unwrap();
+        let to_token = decoded.into_string().unwrap();
+        *letter = letter.replace(&from_token, &to_token);
     }
 
     println!("\nDecoded letter:");

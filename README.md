@@ -18,6 +18,7 @@ is supposed to be an encrypted message from Mary Queen of Scots.
 - [x] Reads the cipher from [src/cipher.yaml](src/cipher.yaml)
 - [ ] And no, you cannot choose a different file name yet. I may get to this. Or this may be left as "an exercise to the reader"
 - [x] Prints the cipher (i.e. the mapping from source chars to target chars) to your terminal
+- [x] Together with the number of occurrences (frequency) of the encoded characters 
 - [x] It will replace all character keys by the character values from the mapping
 - [x] Prints the decoded letter to your terminal
 
