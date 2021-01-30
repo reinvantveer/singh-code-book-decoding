@@ -1,27 +1,27 @@
 cipher:
-  A: A
-  B: B
-  C: C
-  D: D
-  E: E
-  F: F
-  G: G
-  H: H
-  I: I
-  J: J
-  K: K
-  L: L
-  M: M
-  N: N
-  O: e  # Highest occurring letter, often co-occurring next to itself. Does not exist as single-letter word, as "e" is not an English word.
-  P: P
-  Q: Q
-  R: R
-  S: S
-  T: T
-  U: U
-  V: V
-  W: W
-  X: a  # High occurrence, but exists in the text as a single-letter word. Low co-occurrence with itself, fewer than "O=e"
-  Y: i  # The only other single-letter word in English
-  Z: Z
+  A: c  # 22. Because "reAounting" makes "recounting"
+  B: h  # 7. High assymetry: occurs frequently before "e", but never after.
+  C: o  # 8. Because CP makes "on" and "i" was already identified
+  D: g  # 12. Because "durinD" makes "during"
+  E: k  # 17. Because "Eing" makes "king"
+  F: p  # 23. Because "Fast" makes "past" ("f" already taken at "I")
+  G: j  # 24. Because "maGesty" makes "majesty"
+  H: H  # Unused
+  I: f  # 18. Because "Iirst" makes "first"
+  J: r  # 11. Because "thJee" makes "three"
+  K: s  # 10. Because "thoMKand" makes "thousand"
+  L: t  # 6. Because "LBO" makes "the"
+  M: u  # 9. Because "thoMKand" makes "thousand"
+  N: v  # 20. Because "haNe" makes "have"
+  O: e  # 2. Highest occurring letter, often co-occurring next to itself. Does not exist as single-letter word, as "e" is not an English word.
+  P: n  # 5. Because "XPV" will make "and"
+  Q: w  # 16. Because "noQ" makes "now"
+  R: l  # 21. Because "fabRes" makes "fables"
+  S: m  # 13. Because "tiSe" makes "time"
+  T: T  # Unused
+  U: y  # 19. Because "saUing" makes "saying"
+  V: d  # 4. Because XPV will make "and"
+  W: z  # 15. Because "shahraWad" makes "shahrazad"
+  X: a  # 1. High occurrence, but exists in the text as a single-letter word. Low co-occurrence with itself, fewer than "O=e"
+  Y: i  # 3. The only other single-letter word in English
+  Z: b  # 14. Because "Zorne" makes "borne"
